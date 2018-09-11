@@ -47,12 +47,12 @@ const speak = () => {
     console.error("Already speaking...");
     return;
   }
-  if (textInput.value !== "") {
+  if (textInput.value !== '') {
     
     // Add background animation
-    body.style.background = "#2a2a2a url(images/wave.gif)";
+    body.style.background = "#141414 url(images/wave.gif)";
     body.style.backgroundRepeat = "repeat-x";
-    body.style.backgroundSize = "100% 25%";
+    body.style.backgroundSize = "100% 100%";
 
     // Get speak text
     const speakText = new SpeechSynthesisUtterance(textInput.value);
@@ -60,7 +60,7 @@ const speak = () => {
     // Speak end
     speakText.onend = e => {
       console.log("Done speaking...");
-      body.style.background = '#2a2a2a';
+      body.style.background = '#141414';
 
     };
     // Speak error
@@ -98,10 +98,10 @@ textForm.addEventListener("submit", e => {
 });
 
 // Rate value change
-rate.addEventListener("change", e => (rateValue.textContect = rate.value));
+rate.addEventListener("change", e => (rateValue.textContent = rate.value));
 
 // Pitch value change
-pitch.addEventListener("change", e => (pitchValue.textContect = pitch.value));
+pitch.addEventListener("change", e => (pitchValue.textContent = pitch.value));
 
 // Voice select change
-voiceSelect.addEventListener("change", e => speak());
+voiceSelect.addEventListener("submit", e => speak());
