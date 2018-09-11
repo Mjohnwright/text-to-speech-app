@@ -1,0 +1,12 @@
+{
+    "name": "text-to-speech",
+    "homepage": "https://mjohnwright.github.io/text-to-speech-app/",
+    "version": "1.0.0",
+    "description": "Text to speak and synthesis app using the web speech API",
+    "main": "index.js",
+    "scripts": {
+      "deploy": "gh-pages -d dist"
+    },
+    "author": "Matthew Wright",
+    "license": "MIT"
+  }
