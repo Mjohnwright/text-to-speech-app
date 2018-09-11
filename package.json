@@ -11,5 +11,12 @@
   "license": "MIT",
   "dependencies": {
     "gh-pages": "^1.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mjohnwright/text-to-speech-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Mjohnwright/text-to-speech-app/issues"
   }
 }
