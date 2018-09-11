@@ -1,3 +1,7 @@
+// fix pitch and rate slider values
+// fix dropdown issue
+// fix gif
+
 // init SpeechSynth API
 const synth = window.speechSynthesis;
 
